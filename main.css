@@ -17,36 +17,17 @@ h1 {
     font-size: x-large;
 }
 
-.fotito
-{
-    background-image: url("./img/alamolive.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
-    background-attachment: fixed;
-    
-    /* text-align: center; */
-    height: 800px;
-    border-radius: 5px;
-    
-   width: 100%;
-}
 
 
 
 .shows {
-    background-color: rgba(13, 12, 12, 0.4);
+    color: rgb(245, 242, 242);
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
     font-weight: 100;
 
-    margin: 5px;
-    color: white;
-    overflow: hidden;
-    width: 100%;
-
-   
+    width: 100%;   
 }
 .showtable
 {
@@ -76,29 +57,13 @@ h1 {
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
     font-weight: 100;
-    margin: 5px;
-    color: white;
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
+   
+    color: white !important;
+   
 
-    display: grid;
-    grid-gap: 1rem;
+    
 }
-.patreon {
-    background-color: rgba(16, 16, 16, 0.433);
-    text-align: center;
-    color: white;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    font-weight: 100;
 
-    margin: 5px;
-    overflow: hidden;
-
-    display: grid;
-    grid-gap: 1rem;
-}
 
 ul{
     list-style: none;
@@ -113,42 +78,14 @@ ol {
 }
 
 .tabs {
-    background-color: rgba(13, 12, 12, 0.4);
-
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    font-weight: 100;
-    margin: 5px;
-    color: white;
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-
-    display: grid;
-    grid-gap: 1rem;
+    background-color: #f2f2f2dc;
+    opacity: 50%;
 }
-.patreon {
-    background-color: rgba(13, 12, 12, 0.4);
 
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: large;
-    font-weight: 100;
-    margin: 5px;
-    color: white;
-    overflow: hidden;
-    width: 100%;
-    text-align: center;
-}
 
 footer {
-    /* background-color: rgb(159, 16, 16);
-    height: 200px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    text-align: center;
-    font-size: x-large; */
-    position: fixed;
+  
+    position: sticky;
     height: 100px;
     background-color: rgb(113, 15, 15);
     bottom: 0px;
@@ -164,20 +101,14 @@ footer {
 {
     text-align: center;
     position: relative;
-    left: 40%;
-    top: 10px;
-    margin-bottom: 110px;
-    width: 20%;
+   
+    width: 100%;
 }
-nav {
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    
-    justify-content: space-evenly;
+navbar {
+   display: flex!important;
+justify-content: space-around;
+flex-basis: auto;
 
-    margin: 5px;
-    overflow: hidden;
 }
 
 .topnav 
@@ -218,7 +149,7 @@ nav {
 
                  /* Mobile First */
 
-@media screen and (max-width:768px) 
+/* @media screen and (max-width:768px) 
 {
         .fotito{
                    background-size: cover;
@@ -233,4 +164,4 @@ nav {
             }         
                      
 }
-                 
+                  */
