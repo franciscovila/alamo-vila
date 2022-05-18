@@ -25,19 +25,44 @@ h1 {
     font-size: x-large;
 }
 
-//Condicionales
-
-$show: Mendoza; 
 
 
-.shows {
-    @if $show == San Juan {
-        color: indigo;
-    } @else if $show != San Juan {
-        color: antiquewhite;
+
+//Bucles
+@for $i from 1 through 6 {
+
+    h#{$i} {
+        font-size: 24em / $i;
     }
-    
-    
+}
+//Each
+$lista-colores: red, green, blue;
+
+@each $color in $lista-colores  {
+    .color-#{$color} {
+        background-color: $color;
+    }
+}
+
+// Mapas
+$merch: (
+    Buzo XL: #0084ff,
+    Gorra: #0035ff,
+    Remera XL: #dd208b,
+);
+
+@each $ropa, $color in $merch {
+    .ropa-#{$ropa} {
+        color: $color;
+    }
+} 
+
+//Extend
+
+
+.shows {  
+    @extend .showtable;
+
     color: rgb(245, 242, 242);
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -46,6 +71,8 @@ $show: Mendoza;
 
     width: 100%;   
 }
+
+
 .showtable
 {
     position: relative;
@@ -53,6 +80,19 @@ $show: Mendoza;
     bottom: 5px;
 }
 
+//Mixins
+
+@mixin size {
+   height: 5px;
+   width: 20px;
+   margin: 5px 15px 2px 25px; 
+}
+
+div {
+    @include size
+
+    
+}
 .plataformas {
     background-color: rgba(16, 16, 16, 0.433);
     text-align: center;
@@ -69,13 +109,14 @@ $show: Mendoza;
 }
 
 .merch {
+
     background-color: rgba(13, 12, 12, 0.4);
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: large;
     font-weight: 100;
    
-    color: white !important;      
+    // color: white !important;      
 }
 
 
