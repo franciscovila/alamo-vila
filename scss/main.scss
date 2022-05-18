@@ -25,10 +25,19 @@ h1 {
     font-size: x-large;
 }
 
+//Condicionales
 
+$show: Mendoza; 
 
 
 .shows {
+    @if $show == San Juan {
+        color: indigo;
+    } @else if $show != San Juan {
+        color: antiquewhite;
+    }
+    
+    
     color: rgb(245, 242, 242);
 
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
